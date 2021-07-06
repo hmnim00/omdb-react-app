@@ -1,0 +1,32 @@
+.navigation {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  display: flex;
+  height: 60px;
+  background: #000;
+  padding: 0 1rem;
+
+  .container {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+
+    .title {
+      display: flex;
+      align-items: center;
+      color: aliceblue;
+
+      span {
+        font-size: 1.4rem;
+      }
+
+      h1 {
+        margin-left: .5rem;
+        font-size: 1.4rem;
+      }
+    }
+  }
+}

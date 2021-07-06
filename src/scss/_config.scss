@@ -1,0 +1,76 @@
+$background: #272727;
+$secondary-color: #ff3e55;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+// google fonts
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;1,300&display=swap');
+
+body {
+  background: $background;
+  color: #f0f8ff;
+  font-family: 'Roboto', sans-serif;
+}
+
+a {
+  text-decoration: none;
+  color: #f7ffd3;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-weight: 400;
+}
+
+.container {
+  padding-right: 1rem;
+  padding-left: 1rem;
+  margin: 0 auto;
+}
+
+.home,
+.single {
+  padding-top: 70px;
+  min-height: 100vh;
+  height: 100%;
+}
+
+// mixins
+@mixin box-shadow {
+  box-shadow: 0px 1px 4px -1px rgba(0, 0, 0, 0.5);
+}
+
+@mixin transition-ease {
+  transition: all 0.3s ease-in-out;
+}
+
+// vista responsiva
+@mixin media-sm {
+  @media (min-width: 576px) {
+    @content;
+  }
+}
+
+@mixin media-md {
+  @media (min-width: 768px) {
+    @content;
+  }
+}
+
+@mixin media-lg {
+  @media (min-width: 992px) {
+    @content;
+  }
+}
+
+@mixin media-xl {
+  @media (min-width: 1200px) {
+    @content;
+  }
+}

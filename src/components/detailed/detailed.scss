@@ -1,0 +1,116 @@
+.detailed {
+  width: 100%;
+
+  .d-board {
+    padding-bottom: 4rem;
+    display: grid;
+
+    &__header {
+
+      &--title {
+        font-size: 1.3rem;
+      }
+
+      &--info {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+
+        p:not(:last-child) {
+          margin-right: .7rem;
+        }
+
+        p {
+          font-size: 1rem;
+          font-weight: 300;
+        }
+      }
+    }
+
+    &__body {
+      margin-top: 1.2rem;
+
+      &--image {
+        margin-top: 1rem;
+        background: rgb(39, 39, 39);
+        background: linear-gradient(90deg, rgba(39, 39, 39, 1) 0%, rgba(39, 39, 39, 0.46540623085171573) 50%, rgba(39, 39, 39, 1) 100%);
+        width: 100%;
+        height: 500px;
+        display: flex;
+        align-items: flex-start;
+        margin: auto 0;
+        padding: 10px;
+        overflow: hidden;
+
+        img {
+          width: auto;
+          height: 100%;
+        }
+      }
+
+      &--info {
+        display: flex;
+        flex-direction: column;
+        align-items: stretch;
+        width: 100%;
+        justify-content: start;
+
+        .info--text {
+          padding: 1.5rem 0;
+          text-align: justify;
+        }
+
+        .info--rating {
+          display: flex;
+          flex-direction: row;
+          align-items: center;
+
+          p {
+            span {
+              font-weight: bold;
+            }
+
+            margin-left: .5rem;
+          }
+        }
+
+        .info--add {
+          p {
+            margin: .5rem 0;
+          }
+        }
+      }
+    }
+
+    &__footer {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      justify-content: start;
+      width: 100%;
+
+      &--info:not(:last-child) {
+        width: 100%;
+        border-top: 1px solid #333333;
+      }
+
+      &--info:last-child {
+        width: 100%;
+        border-top: 1px solid #333333;
+        border-bottom: 1px solid #333333;
+      }
+
+      &--info {
+        padding: 10px 0;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+
+        p {
+          margin-left: 1rem;
+          font-weight: 300;
+        }
+      }
+    }
+  }
+}
