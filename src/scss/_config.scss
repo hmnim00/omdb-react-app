@@ -32,12 +32,13 @@ h4 {
   padding-right: 1rem;
   padding-left: 1rem;
   margin: 0 auto;
+  height: 100%;
 }
 
 .home,
 .single {
   padding-top: 70px;
-  min-height: 100vh;
+  min-height: calc(100vh - 175px);
   height: 100%;
 }
 

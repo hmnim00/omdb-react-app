@@ -1,0 +1,92 @@
+.detailed {
+  width: 100%;
+}
+.detailed .d-board {
+  padding-bottom: 4rem;
+  display: grid;
+}
+.detailed .d-board__header--title {
+  font-size: 1.3rem;
+}
+.detailed .d-board__header--info {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.detailed .d-board__header--info p:not(:last-child) {
+  margin-right: 0.7rem;
+}
+.detailed .d-board__header--info p {
+  font-size: 1rem;
+  font-weight: 300;
+}
+.detailed .d-board__body {
+  margin-top: 1.2rem;
+}
+.detailed .d-board__body--image {
+  margin-top: 1rem;
+  background: #272727;
+  background: linear-gradient(90deg, #272727 0%, rgba(39, 39, 39, 0.4654062309) 50%, #272727 100%);
+  width: 100%;
+  height: 500px;
+  display: flex;
+  align-items: flex-start;
+  margin: auto 0;
+  padding: 10px;
+  overflow: hidden;
+}
+.detailed .d-board__body--image img {
+  width: auto;
+  height: 100%;
+}
+.detailed .d-board__body--info {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  width: 100%;
+  justify-content: start;
+}
+.detailed .d-board__body--info .info--text {
+  padding: 1.5rem 0;
+  text-align: justify;
+}
+.detailed .d-board__body--info .info--rating {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.detailed .d-board__body--info .info--rating p {
+  margin-left: 0.5rem;
+}
+.detailed .d-board__body--info .info--rating p span {
+  font-weight: bold;
+}
+.detailed .d-board__body--info .info--add p {
+  margin: 0.5rem 0;
+}
+.detailed .d-board__footer {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: start;
+  width: 100%;
+}
+.detailed .d-board__footer--info:not(:last-child) {
+  width: 100%;
+  border-top: 1px solid #333333;
+}
+.detailed .d-board__footer--info:last-child {
+  width: 100%;
+  border-top: 1px solid #333333;
+  border-bottom: 1px solid #333333;
+}
+.detailed .d-board__footer--info {
+  padding: 10px 0;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.detailed .d-board__footer--info p {
+  margin-left: 1rem;
+  font-weight: 300;
+}/*# sourceMappingURL=detailed.css.map */
